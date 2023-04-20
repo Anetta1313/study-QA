@@ -1,0 +1,105 @@
+
+
+user@WIN-0KK9H2VIKPO MINGW64 ~
+$ pwd
+/c/Users/user
+
+user@WIN-0KK9H2VIKPO MINGW64 ~
+$ cd /f/тестирование
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование
+$ pwd
+/f/тестирование
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование
+$ mkdir group_34
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование
+$ cd /f/тестирование/group_34
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ mkdir qa_1 qa_2 qa_3
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ cd /f/тестирование/group_34/qa_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ touch qq.txt qq1.txt qq2.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ touch free.json free1.json
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ mkdir aa_1 aa_2 aa_3
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ ls -la
+total 4
+ drwxr-xr-x 1 user 197121 0 Apr 16 13:46 ./
+ drwxr-xr-x 1 user 197121 0 Apr 16 13:37 ../
+ drwxr-xr-x 1 user 197121 0 Apr 16 13:46 aa_1/
+ drwxr-xr-x 1 user 197121 0 Apr 16 13:46 aa_2/
+ drwxr-xr-x 1 user 197121 0 Apr 16 13:46 aa_3/
+ -rw-r--r-- 1 user 197121 0 Apr 16 13:44 free.json
+ -rw-r--r-- 1 user 197121 0 Apr 16 13:44 free1.json
+ -rw-r--r-- 1 user 197121 0 Apr 16 13:42 qq.txt
+ -rw-r--r-- 1 user 197121 0 Apr 16 13:42 qq1.txt
+ -rw-r--r-- 1 user 197121 0 Apr 16 13:42 qq2.txt
+
+ user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+ $ cat qq.txt
+
+ user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+ $ cat >qq.txt
+я полагаюсь на удачу мы с ней старые друзья
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ nano
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34/qa_1
+$ cd ..
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ find /f/тестирование/ -name free1.json
+/f/тестирование/group_34/qa_1/free1.json
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ find /f -name free.json
+find: ‘/f/System Volume Information’: Permission denied
+/f/тестирование/group_34/qa_1/free.json
+/f/тестирование/group_34/qa_3/free.json
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ nano
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ tail qq1.txt | grep -i "Lagrange Point 2"
+Queqiao was put in orbit around the Lagrange Point 2, a gravitationally stable spot beyond the Moon.
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ tail -n 2 qq1.txt
+In order for the Chang’e 4 lander and rover to be able to communicate with Earth, last year a relay satellite named
+Queqiao was put in orbit around the Lagrange Point 2, a gravitationally stable spot beyond the Moon.
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ head -n 2 qq1.txt
+What better way to celebrate 50 years since the Apollo 11 landing than going back to the Moon?
+But this time there will be no humans setting foot on the Moon. Instead, two robotic missions will explore the unchartered southern lunar hemisphere,
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ less qq1.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ date
+Sun Apr 16 14:49:10     2023
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/group_34
+$ curl http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   232  100   232    0     0   1197      0 --:--:-- --:--:-- --:--:--  1202<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
