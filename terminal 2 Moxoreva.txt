@@ -1,0 +1,278 @@
+user@WIN-0KK9H2VIKPO MINGW64 ~
+$ cd /f/тестирование
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование
+$ mkdir dir_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование
+$ cd /f/тестирование/dir_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ mkdir  inner_dir_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ pwd
+/f/тестирование/dir_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ touch tf_1.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ cat >tf_2.txt
+the first 1
+the second 2
+the third 3
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ cd /f/тестирование/dir_1/inner_dir_1
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >tf_3.txt
+lol
+kek
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >>tf_3.txt
+the second 2
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >>tf_2.txt
+the sec 2
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >>tf_3.txt
+the SeCoNd 2
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >>tf_2.txt
+the seConD 2
+
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >tf_4.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+11
+12
+13
+14
+15
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cat >tF_5.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ ls -la
+total 4
+drwxr-xr-x 1 user 197121  0 Apr 21 20:10 ./
+drwxr-xr-x 1 user 197121  0 Apr 21 19:59 ../
+-rw-r--r-- 1 user 197121 30 Apr 21 20:10 tF_5.txt
+-rw-r--r-- 1 user 197121 23 Apr 21 20:05 tf_2.txt
+-rw-r--r-- 1 user 197121 34 Apr 21 20:05 tf_3.txt
+-rw-r--r-- 1 user 197121 35 Apr 21 20:10 tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1/inner_dir_1
+$ cd ..
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ ls /f/тестирование/dir_1/inner_dir_1/tf_3.txt
+/f/тестирование/dir_1/inner_dir_1/tf_3.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ ls -la /f/тестирование/dir_1/inner_dir_1/tf_3.txt
+-rw-r--r-- 1 user 197121 34 Apr 21 20:05 /f/тестирование/dir_1txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ ls -la
+total 5
+drwxr-xr-x 1 user 197121  0 Apr 21 19:59 ./
+drwxr-xr-x 1 user 197121  0 Apr 21 19:52 ../
+drwxr-xr-x 1 user 197121  0 Apr 21 20:10 inner_dir_1/
+-rw-r--r-- 1 user 197121  0 Apr 21 19:58 tf_1.txt
+-rw-r--r-- 1 user 197121 37 Apr 21 20:00 tf_2.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ cat /f/тестирование/dir_1/inner_dir_1/tf_3.txt
+lol
+kek
+the second 2
+the SeCoNd 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find /f/тестирование/ -name tf_4.txt
+/f/тестирование/dir_1/inner_dir_1/tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ cat >>tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ echo "" >/f/тестирование/dir_1/inner_dir_1/tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find /f/тестирование/ -name "*tf*"
+/f/тестирование/dir_1/inner_dir_1/tf_2.txt
+/f/тестирование/dir_1/inner_dir_1/tf_3.txt
+/f/тестирование/dir_1/inner_dir_1/tf_4.txt
+/f/тестирование/dir_1/tf_1.txt
+/f/тестирование/dir_1/tf_2.txt
+/f/тестирование/dir_1/tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find /f/тестирование/ -iname "*tf*"
+/f/тестирование/dir_1/inner_dir_1/tf_2.txt
+/f/тестирование/dir_1/inner_dir_1/tf_3.txt
+/f/тестирование/dir_1/inner_dir_1/tf_4.txt
+/f/тестирование/dir_1/inner_dir_1/tF_5.txt
+/f/тестирование/dir_1/tf_1.txt
+/f/тестирование/dir_1/tf_2.txt
+/f/тестирование/dir_1/tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep "sec" ./*
+grep: ./inner_dir_1: Is a directory
+./tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -r sec.
+inner_dir_1/tf_2.txt:the sec 2
+inner_dir_1/tf_3.txt:the second 2
+tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -r -i "sec" .
+./inner_dir_1/tf_2.txt:the sec 2
+./inner_dir_1/tf_2.txt:the seConD 2
+./inner_dir_1/tf_3.txt:the second 2
+./inner_dir_1/tf_3.txt:the SeCoNd 2
+./tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -w "sec" *
+grep: inner_dir_1: Is a directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -wi "sec" *
+grep: inner_dir_1: Is a directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -r "second" .
+./inner_dir_1/tf_3.txt:the second 2
+./tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -ri "second" .
+./inner_dir_1/tf_2.txt:the seConD 2
+./inner_dir_1/tf_3.txt:the second 2
+./inner_dir_1/tf_3.txt:the SeCoNd 2
+./tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -not -exec grep -q "second" {}\; -print
+find: missing argument to `-exec'
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -not -exec grep -q "second" {}\; -print
+find: missing argument to `-exec'
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -not -exec grep -q "second" {}\; -print
+find: missing argument to `-exec'
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -not -exec' grep -q "second" {}\; -print
+> ^C
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -exec grep -iH "second" {} \;
+./inner_dir_1/tf_2.txt:the seConD 2
+./inner_dir_1/tf_3.txt:the second 2
+./inner_dir_1/tf_3.txt:the SeCoNd 2
+./tf_2.txt:the second 2
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -r -l "second" .
+./inner_dir_1/tf_3.txt
+./tf_2.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$  grep -rv "
+> grep -rv "second" .
+> ^C
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -not -exec grep -q "second" {} \; -print
+./inner_dir_1/tf_2.txt
+./inner_dir_1/tf_4.txt
+./inner_dir_1/tF_5.txt
+./tf_1.txt
+./tf_4.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ tail -n 4 file.txt
+tail: cannot open 'file.txt' for reading: No such file or directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ tail -n 4 tf_2.txt
+the first 1
+the second 2
+the third 3
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$  head -n 4 tf_3.txt
+head: cannot open 'tf_3.txt' for reading: No such file or directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ mkdir new_folder && echo "This is the text content" > new_folder/new_file.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -exec grep -q "sec" {} \; -exec mv {} /path/to/new_folder \;
+mv: cannot move './inner_dir_1/tf_2.txt' to '/path/to/new_folder': No such file or directory
+mv: cannot move './inner_dir_1/tf_3.txt' to '/path/to/new_folder': No such file or directory
+mv: cannot move './tf_2.txt' to '/path/to/new_folder': No such file or directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ find . -type f -exec grep -q "sec" {} \; -exec cp {} /path/to/new_folder \;
+cp: cannot create regular file '/path/to/new_folder': No such file or directory
+cp: cannot create regular file '/path/to/new_folder': No such file or directory
+cp: cannot create regular file '/path/to/new_folder': No such file or directory
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -hr "sec" ./*.txt | cat > new_file.txt && echo "All 'sec' lines from txt files were copied to new_file.txt"
+All 'sec' lines from txt files were copied to new_file.txt
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ grep -lr "sec" ./*.txt | xargs rm -f && echo "All text files containing 'sec' were deleted"
+All text files containing 'sec' were deleted
+
+user@WIN-0KK9H2VIKPO MINGW64 /f/тестирование/dir_1
+$ echo "Good job!!"
+echo "Good jobgrep -lr "sec" ./*.txt | xargs rm -f && echo "All text files containing 'sec' were deleted""
+Good jobgrep -lr sec ./*.txt | xargs rm -f && echo All text files containing sec were deleted
+
+
